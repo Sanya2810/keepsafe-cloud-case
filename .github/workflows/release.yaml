@@ -14,8 +14,6 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - uses: docker-practice/actions-setup-docker@master
-      - run: docker version
       - run: npm install
       - run: npm test
       - run: npm run lint
@@ -24,4 +22,5 @@ jobs:
       - id: show_pipeline_environemnt
         run: ls
         name: sanya
+      - run: docker build . -t "sanya28/keepsafe-cloud-case"
 
