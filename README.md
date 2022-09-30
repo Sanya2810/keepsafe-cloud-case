@@ -28,7 +28,7 @@ To run the linter:
 `npm run lint`
 
 ## Git
-Fork this repo and follow powerpoint actions.
+Fork this repo and follow powerpoint actions
 
 ## CI/CD exercise
 In this chapter we guide you through the steps of a complete pipeline. 
