@@ -12,5 +12,6 @@ jobs:
     steps:
       - id: command
         run: echo ${{ env.SHOWCASE_ENV }}
-      - id: show pipeline environemnt
+      - id: show_pipeline_environemnt
         run: ls
+        name: sanya
