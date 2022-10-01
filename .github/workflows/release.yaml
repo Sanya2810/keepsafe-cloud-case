@@ -23,4 +23,6 @@ jobs:
         run: ls
         name: sanya
       - run: docker build . -t "sanya28/keepsafe-cloud-case"
+      - run: docker login -u sanya28 -p "${{ secrets.SUPER_SECRET }}"
+      - run: docker push "sanya28/keepsafe-cloud-case"
 
